@@ -27,6 +27,7 @@ while QuestionCount>0:
                         d=ans+random.randint(0,3)
                     print ('a:',a,',b:',b,',c:',c,',d:',d )
                     QuestionCount-= 1
+                    demo=55
 
 
                     #hello india a bqqqaaaaaaa
