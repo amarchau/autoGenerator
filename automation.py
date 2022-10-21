@@ -1,7 +1,7 @@
 import random
 
 question_count = 20
-question_digits = 2
+question_digits = 3
 Questions = list()
 question_values = list()
 ques_tup = list()
@@ -48,13 +48,30 @@ while question_digits>0:
                 print (options)
                 #print ('a:',a,',b:',b,',c:',c,',d:',d )
                 question_digits-= 1
+question_digits=len(question_values)
+#print (len(question_values))
+val11 = str()
+val22 = str()
+anss = str()
+bb = str()
+cc = str()
+dd = str()
+while question_digits:
+    val11 += str(question_values[question_digits-1][0])
+    val22=val22+str(question_values[question_digits-1][1])
+    anss=anss+str(question_values[question_digits-1][2])
+    bb=bb+str(question_values[question_digits-1][3])
+    cc=cc+str(question_values[question_digits-1][4])
+    dd=dd+str(question_values[question_digits-1][5])
+    question_digits-= 1
 
-val11=str(question_values[0][0])+str(question_values[1][0])
-val22=str(question_values[0][1])+str(question_values[1][1])
-anss=str(question_values[0][2])+str(question_values[1][2])
-bb=str(question_values[0][3])+str(question_values[1][3])
-cc=str(question_values[0][4])+str(question_values[1][4])
-dd=str(question_values[0][5])+str(question_values[1][5])
+
+#val11=str(question_values[0][0])+str(question_values[1][0])
+#val22=str(question_values[0][1])+str(question_values[1][1])
+#anss=str(question_values[0][2])+str(question_values[1][2])
+#bb=str(question_values[0][3])+str(question_values[1][3])
+#cc=str(question_values[0][4])+str(question_values[1][4])
+#dd=str(question_values[0][5])+str(question_values[1][5])
 
 print (val11,'+',val22,'=',anss)
 print (anss,',',bb,',',cc,',',dd)
